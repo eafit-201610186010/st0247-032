@@ -12,11 +12,11 @@ public class Taller3 {
 			System.out.println("Mover disco "+  n + " desde " + origen + " hasta " + destino);
 		}
 		else{
-			torresDeHannoiintermedio(n-1, origen, destino, intermedio);
+			torresDeHannoiAux(n-1, origen, destino, intermedio);
 			
 			System.out.println("Mover disco " + n + " desde " + origen + " hasta " + destino  );
 			
-			torresDeHannoiintermedio(n-1, intermedio, origen, destino);	
+			torresDeHannoiAux(n-1, intermedio, origen, destino);	
 		}
 	}
 		
@@ -29,8 +29,8 @@ public class Taller3 {
 	private static void combinationsAux(String prefix, String s) {  
 		if (s.length() > 0) {
             		System.out.println(prefix + s.charAt(0));
-            		combinationsintermedio(prefix + s.charAt(0), s.substring(1));
-            		combinationsintermedio(prefix, s.substring(1));
+            		combinationsAux(prefix + s.charAt(0), s.substring(1));
+            		combinationsAux(prefix, s.substring(1));
         	}
 	}
 		
