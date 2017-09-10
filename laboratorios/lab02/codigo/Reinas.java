@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Esta clase es una implementación del problema de las n reinas
  * 
- * @author Camilo Cruz Villegas, Cristian Villlamizar 
+ * @author Camilo Cruz Villegas, Cristian Villamizar 
  * @version 1
  */
 public class Reinas
